@@ -17,13 +17,15 @@ timeout /t 2 /nobreak >NUL
 
 
 
-@REM git init 
+git init 
 
-@REM git remote add orign %1
+git remote add orign %1
 
-@REM git add .
+git add .
 
-@REM git commit -m "%2"
+git commit -m "%2"
 
-@REM git push orign
+git push orign
 
+
+pause 
