@@ -1,14 +1,29 @@
 @echo off 
+timeout /t 2 /nobreak >NUL
 
-git init 
+echo      ___           ___                       ___                    ___                             
+echo     /  /\         /__/\          ___        /  /\                  /  /\        ___           ___   
+echo    /  /::\        \  \:\        /  /\      /  /::\                /  /:/_      /  /\         /  /\  
+echo   /  /:/\:\        \  \:\      /  /:/     /  /:/\:\              /  /:/ /\    /  /:/        /  /:/  
+echo  /  /:/~/::\   ___  \  \:\    /  /:/     /  /:/  \:\            /  /:/_/::\  /__/::\       /  /:/   
+echo /__/:/ /:/\:\ /__/\  \__\:\  /  /::\    /__/:/ \__\:\          /__/:/__\/\:\ \__\/\:\__   /  /::\   
+echo \  \:\/:/__\/ \  \:\ /  /:/ /__/:/\:\   \  \:\ /  /:/          \  \:\ /~~/:/    \  \:\/\ /__/:/\:\  
+echo  \  \::/       \  \:\  /:/  \__\/  \:\   \  \:\  /:/            \  \:\  /:/      \__\::/ \__\/  \:\ 
+echo   \  \:\        \  \:\/:/        \  \:\   \  \:\/:/              \  \:\/:/       /__/:/       \  \:\
+echo    \  \:\        \  \::/          \__\/    \  \::/                \  \::/        \__\/         \__\/
+echo     \__\/         \__\/                     \__\/                  \__\/                            
 
-git remote add orign %1
+timeout /t 2 /nobreak >NUL
 
-git add .
 
-git commit -m "gjk"
 
-git push orign
+@REM git init 
 
-pause
+@REM git remote add orign %1
+
+@REM git add .
+
+@REM git commit -m "%2"
+
+@REM git push orign
 
