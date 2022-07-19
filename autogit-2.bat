@@ -13,19 +13,20 @@ echo    \  \:\        \  \::/          \__\/    \  \::/                \  \::/  
 echo     \__\/         \__\/                     \__\/                  \__\/                            
 
 
+timeout /t 2 /nobreak >NUL
 
-git init 
+git pull orign %1
 
-git remote add orign %1
+timeout /t 1 /nobreak >NUL
 
 git add .
 
-timeout /t 2 /nobreak >NUL
+timeout /t 1 /nobreak >NUL
 
 git commit -m "%2"
 
-timeout /t 2 /nobreak >NUL
+timeout /t 1 /nobreak >NUL
 
 git push orign
 
-echo Success 
+echo Success
