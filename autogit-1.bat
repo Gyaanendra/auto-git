@@ -1,5 +1,4 @@
 @echo off 
-timeout /t 2 /nobreak >NUL
 
 echo      ___           ___                       ___                    ___                             
 echo     /  /\         /__/\          ___        /  /\                  /  /\        ___           ___   
@@ -13,8 +12,6 @@ echo   \  \:\        \  \:\/:/        \  \:\   \  \:\/:/              \  \:\/:/ 
 echo    \  \:\        \  \::/          \__\/    \  \::/                \  \::/        \__\/         \__\/
 echo     \__\/         \__\/                     \__\/                  \__\/                            
 
-timeout /t 2 /nobreak >NUL
-
 
 
 git init 
@@ -23,7 +20,11 @@ git remote add orign %1
 
 git add .
 
+timeout /t 2 /nobreak >NUL
+
 git commit -m "%2"
+
+timeout /t 2 /nobreak >NUL
 
 git push orign
 
